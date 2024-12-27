@@ -233,17 +233,16 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <button class="button">send</button>
 
-
-
+                    <form method="POST" action="" class="contact__form" id="contactForm">
+                        <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                        <textarea name="message" placeholder="Your Message" cols="0" rows="10" class="contact__input" required></textarea>
+                        <button type="submit" value="submit" class=" button ">Send</button>
 
 
                     </form>
+
                 </div>
             </section>
         </div>
@@ -256,7 +255,7 @@
 
 
 
-    <footer class="footer ">
+    <footer class=" footer ">
         <p class="footer__title ">Yogeswari</p>
         <div class="footer__social ">
             <a href="https://youtube.com/@yogeswarimurugesan?si=FpC2eG8AmJAcQkeo " class="footer__icon "><i class='bx bxl-youtube' ></i></a>
@@ -272,6 +271,8 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js "></script>
+    <script src="google.js"></script>
+
 
 </body>
 
